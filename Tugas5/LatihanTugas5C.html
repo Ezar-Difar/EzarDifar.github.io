@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Cek Kesehatan</title>
+</head>
+<body>
+
+<center>
+    <h1>Formulir Cek Kesehatan KlinikSakit</h1>
+    <p>Silahkan lengkapi data di bawah ini.</p>
+    <hr>
+</center>
+    
+<form action="formulir.html" method="get">
+    
+    <h2>Silahkan isi data dibawah</h2>
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" name="nama_lengkap" size="50" value="Masukkan nama Anda" required><br><br>
+
+    <label for="Jenis_kelamin">Jenis Kelamin:</label><br>
+    <input type="radio" id="jenis_kelamin" value="laki-laki" required></input>Laki - Laki
+    <input type="radio" id="jenis_kelamin" value="perempuan" required></input>Perempuan<br><br>
+
+    <label for="alamat">Alamat:</label><br>
+    <input type="text" id="alamat" name="alamat_pasien" size="50" value="contoh Desa geneng rt27/rw06" required><br><br>
+
+    <label for="umur">Umur:</label><br>
+    <input type="number" id="umur" name="umur_pasien" min="0" value="0" required><br><br>
+
+    <label for="Spesialis">Spesialis:</label><br>
+    <input type="checkbox" name="Spesialis THT" checked></input> THT
+    <Input type="checkbox" name="Spesialis Saraf" checked ></input> Neurologis
+    <Input type="checkbox" name="Spesialis Psikiatri" checked></input> Psikolog<br>
+    <hr>
+
+    <label for="keterangan">Jelaskan Keluhan Yang Anda Alami:</label><br>
+    <textarea id="keterangan" name="keterangan_penyakit" rows="5" cols="50" value=""></textarea>
+    <br>
+
+    <hr>
+    <input type="submit" value="Kirim Formulir">
+    <input type="reset" value="Bersihkan Formulir">
+</form>
+</body>
+</html>

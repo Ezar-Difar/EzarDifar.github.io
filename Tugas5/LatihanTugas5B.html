@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Perpustakaan Kota Saranjana</title>
+</head>
+<body>
+
+<center>
+    <h1>Formulir Peminjaman Buku Perpustakaan Kota Saranjana</h1>
+    <p>Silahkan lengkapi data di bawah ini.</p>
+    <hr>
+</center>
+    
+<form action="formulir.html" method="get">
+    
+    <h2>Silahkan isi data dibawah</h2>
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" name="nama_lengkap" size="50" value="Masukkan nama Anda" required><br><br>
+
+    <label for="Jenis_kelamin">Jenis Kelamin:</label><br>
+    <input type="radio" id="jenis_kelamin" value="laki-laki" required></input>Laki - Laki
+    <input type="radio" id="jenis_kelamin" value="perempuan" required></input>Perempuan<br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email_anggota" size="50" value="alamat@contoh.com" required><br><br>
+
+    <label for="password_member">Password Member:</label><br>
+    <input type="password" name="password" value="Kosong1_"></input><br><br>
+
+    <hr>
+    <h2>Detail</h2>
+
+    <label for="jenis_buku">Jenis Buku yang Dipinjam:</label><br>
+    <select id="jenis_buku" name="jenis_buku_dipinjam" required>
+        <option value="" selected>Pilih salah satu</option>
+        <option value="fiksi">Fiksi (Novel, Cerpen)</option>
+        <option value="nonfiksi">Non-Fiksi (Ilmu Pengetahuan, Sejarah)</option>
+        <option value="akademik">Akademik (Jurnal, Skripsi)</option>
+        <option value="anak">Buku Anak</option>
+    </select>
+    <br><br>
+
+    <label for="jumlah">Jumlah Buku (Maks. 3):</label><br>
+    <input type="number" id="jumlah" name="jumlah_buku" min="1" max="3" value="1" required><br><br>
+
+    <label for="keterangan">Judul Buku yang Dicari (Opsional):</label><br>
+    <textarea id="keterangan" name="keterangan_tambahan" rows="5" cols="50" value="Sebutkan judul atau informasi lain yang spesifik."></textarea>
+    <br><br>
+
+    <hr>
+    <input type="submit" value="Kirim Formulir">
+    <input type="reset" value="Bersihkan Formulir">
+</form>
+</body>
+</html>
